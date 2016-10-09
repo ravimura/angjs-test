@@ -1,0 +1,18 @@
+<a ui-sref="home">Home</a> &lt; <a ui-sref="categories">Categories</a> &lt; Items
+
+
+<h3>Items in the selected category</h3>
+
+<ul>
+      <table border="1">
+      <tr ng-repeat="item in itemDetail.items" >
+        <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+              <td>{{item.small_portion_name}}</td>
+              <td>{{item.price_small}}</td>
+                <td>{{item.large_portion_name}}</td>
+                <td>{{item.price_large}}</td>
+        </tr>
+  </table>
+</ul>
