@@ -1,0 +1,20 @@
+<div ng-controller="InfoController as ctrl">
+
+  <span ng-if="ctrl.user">
+
+    Your Details: <br><br><br>
+
+    Firstname : {{ctrl.user.firstname}}<br><br>
+    Lastname : {{ctrl.user.laststname}}<br><br>
+    Email : {{ctrl.user.email}}<br><br>
+    Phone : {{ctrl.user.phone}}<br><br>
+    Menu Item: {{ctrl.user.menu_item}}<br><br>
+    <img src="images/menu/L/{{ctrl.user.menu_item}}.jpg"></img>
+
+  </span>
+  <span ng-if="!ctrl.user">
+    Register Please !
+
+  </span>
+
+</div>
